@@ -8,7 +8,7 @@ namespace GameUnits
     {
         public override float Value => 5;
 
-        public SettlerUnit(int mov, int health) : base(mov, health) { };
+        public SettlerUnit(int mov, int health) : base(mov, health) { }
     }
 }
-}
+

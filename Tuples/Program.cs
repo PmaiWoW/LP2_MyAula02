@@ -18,8 +18,8 @@ namespace Tuples
             foreach (object o in objs1) { Console.WriteLine(o); }
 
             Tuple<int, double, bool> objs2 = GetStuff2();
-            Console.WriteLine($"\nReturn by Tuple:\nint: {objs2.Item1} double: {objs2.Item2} " +
-                $"bool: {objs2.Item3}");
+            Console.WriteLine($"\nReturn by Tuple:\nint: {objs2.Item1} " +
+                $"double: {objs2.Item2} bool: {objs2.Item3}");
 
             Stuff objs3 = GetStuff3();
             Console.WriteLine($"\nReturn by Struct:\nint: {objs3.I} double: " +
