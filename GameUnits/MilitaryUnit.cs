@@ -11,11 +11,13 @@ namespace GameUnits
         public override int Health => base.Health + XP;
         public override float Value => AttackPower + XP;
 
-        public MilitaryUnit(int mov, int health, int attackPower) 
+        public MilitaryUnit(int mov, int health, int attackPower, int xp) 
             : base(mov, health)
         {
             AttackPower = attackPower;
-            XP = 0;
+            XP = xp;
         }
+        public override string ToString() => $"{base.ToString()}" +
+            $"AttackPower: {AttackPower}\nXP: {XP}";
     }
 }

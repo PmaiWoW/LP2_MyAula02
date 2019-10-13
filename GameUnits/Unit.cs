@@ -20,5 +20,8 @@ namespace GameUnits
         {
             Console.WriteLine($"Unit moves {movement} tiles.");
         }
+
+        public override string ToString() => $"{GetType()}:\nHealth: " +
+            $"{Health}\nValue: {Value}\n";
     }
 }
